@@ -1,0 +1,53 @@
+{
+	"courses": {
+		"cs": [
+			"1411",
+			"2410"
+		],
+		"math": [
+			"2401",
+			"2405"
+		],
+		"data": [
+			"1401"
+		]
+	},
+	"workshops": {
+		"course": {
+			"cs": {
+				"1411": [{
+					"tutorName": "Eva Ruiz",
+					"Days": ["T", "Th"],
+					"Times": ["11:00 - 12:00", "3:00 - 4:00"]
+				}],
+				"2410": [{
+						"tutorName": "Jose Gonzalez",
+						"Days": ["T", "Th"],
+						"Times": ["12:00 - 1:00", "11:00 - 12:00"]
+					},
+					{
+						"tutorName": "Iliana Barrera",
+						"Days": ["T"],
+						"Times": ["3:00 - 4:00"]
+					},
+					{
+						"tutorName": "Diana Rodarte",
+						"Days": ["F"],
+						"Times": ["12:00 - 1:00"]
+					}
+				]
+			},
+			"math": {
+				"2401": [{
+					"tutorName": "Diana Rodate",
+					"Days": ["M"],
+					"Times": ["11:00 - 12:00"]
+				}, {
+					"tutorName": "Vy ly",
+					"Days": ["Th"],
+					"Times": ["12:00 - 1:00"]
+				}]
+			}
+		}
+	}
+}

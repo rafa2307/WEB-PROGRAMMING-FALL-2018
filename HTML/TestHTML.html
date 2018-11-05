@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<form>
+<center>
+<h1>
+Welcome to the CLCC
+</h1>
+</center>
+<div class="form-row no-gutters">
+    <div class= "col-lg-1">
+          <div id="CourseSelection" class="dropdown">
+              <button id="CourseIDButton" 
+                      class="btn btn-primary dropdown-toggle" 
+                      type="button" 
+                      data-toggle="dropdown">
+             COURSE
+              </button>
+
+              <ul id="CourseID" class="dropdown-menu">
+                  <li><a href="#">CS</a></li>
+                  <li><a href="#">DATA</a></li>
+                  <li><a href="#">MATH</a></li>
+              </ul>
+          </div>
+    </div>
+    <div class ="col-lg-4 offset-1">
+          <input type="text" 
+              class="form-control col-lg-6" 
+              id="CourseNumbertxtbx" 
+              placeholder="Need help? Enter Course Number">
+    </div>
+
+</div>
+
+</form>
+<!--Script to change the Text display on the dropdown menu-->
+<script>
+$("#CourseID a").click(function(e){
+    e.preventDefault(); // cancel the link behaviour
+    var selText = $(this).text();
+    $("#CourseIDButton").text(selText);
+});
+</script>
+</body>
+</html>
