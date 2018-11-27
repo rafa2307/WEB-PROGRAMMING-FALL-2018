@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -35,6 +37,162 @@
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+
+
+	<script>
+		
+
+			var image_tracker = '1';		// this variables keeps track of the images
+			
+			
+			// This method changes the image 
+			function change (){
+				
+				var image = document.getElementById('image_test')	// this variable gets the id of the current image being displayed
+				
+				
+				// this switch statement goes trough all the images
+				switch(image_tracker){
+					
+				case '1':
+							image.src = 'img2/2.png';	// the image source if being changed
+							
+							image_tracker = '2';	// the image tracker is being changed
+							
+							break;
+							
+				case '2':
+							
+							image.src = 'img2/3.png';	
+					
+							image_tracker = '3';
+					
+							break;
+							
+				case '3':
+					
+							image.src = 'img2/4.png';	
+					
+							image_tracker = '4';	
+					
+							break;
+					
+				case '4':
+					
+							image.src = 'img2/5.png';	
+			
+							image_tracker = '5';
+			
+							break;
+							
+				case '5':
+					
+							image.src = 'img2/6.png';	
+					
+							image_tracker = '6';	
+					
+							break;
+					
+				case '6':
+					
+							image.src = 'img2/7.png';	
+			
+							image_tracker = '7';
+			
+							break;
+							
+				case '7':
+					
+							image.src = 'img2/8.png';	
+			
+							image_tracker = '8';	
+			
+							break;
+			
+				case '8':
+			
+							image.src = 'img2/9.png';	
+	
+							image_tracker = '9';
+	
+							break;
+							
+				case '9':
+					
+							image.src = 'img2/10.png';	
+			
+							image_tracker = '10';	
+			
+							break;
+			
+				case '10':
+			
+							image.src = 'img2/11.png';	
+	
+							image_tracker = '11';
+	
+							break;
+
+				case '11':
+			
+							image.src = 'img2/12.png';	
+
+							image_tracker = '12';
+
+							break;
+
+				case '12':
+			
+							image.src = 'img2/13.png';	
+
+							image_tracker = '13';
+
+							break;
+
+				case '13':
+			
+							image.src = 'img2/14.png';	
+
+							image_tracker = '14';
+
+							break;
+
+				case '14':
+			
+							image.src = 'img2/15.png';	
+
+							image_tracker = '15';
+
+							break;
+
+				case '15':
+			
+							image.src = 'img2/16.png';	
+
+							image_tracker = '16';
+
+							break;
+
+				case '16':
+			
+							image.src = 'img2/1.png';	
+
+							image_tracker = '1';
+
+							break;	
+							
+				default:
+							break;
+				
+				
+				}
+				
+			}
+			
+			// The set interval method calls the change function every week to change the image being displayed.
+			setInterval('change()', 1000);
+		
+		</script>
 </head>
 
 <body>
@@ -49,7 +207,7 @@
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
 						<li class="menu-active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
+						<li><a href="about.html">About Us</a></li>
 						<li><a href="courses.html">Courses</a></li>
 						<li><a href="scholarships.html">Scholarships</a>
 						</li>
@@ -107,17 +265,17 @@
 				
 				<div class="offset-lg-1 col-lg-6 offset-md-0 col-md-12 about-right">
 					<h1>
-						Math Problem <br> off the week!!
+						Math Problem <br> of the week!!
 					</h1>
 					<div class="wow fadeIn" data-wow-duration="1s">
 						<p>
-							A Math Problem goes here
+							Evaluate the following integral
 						</p>
 					</div>
 					<a href="mathAnswer.html" class="primary-btn">Answer</a>
 				</div>
 				<div class="col-lg-5 col-md-6 about-left">
-					<img class="img-fluid" src="img/about.jpg" alt="">
+					<img class="img-fluid" src="img2/1.png" height = "500" width = "520" alt="image1" id = "image_test">
 				</div>
 			</div>
 		</div>
@@ -136,7 +294,7 @@
 					<div class="wow fadeIn" data-wow-duration="1s">
 						<p>
 							Come by the CLCC for help on your next math homework assignment, debugging code, and network
-							with other students.
+							with other students. <br> Click the Schedule button below to look at the schedule of the peer leaders.
 						</p>
 					</div>
 					<a href="img/CLCC%20ScheduleF18.pdf" class="primary-btn white"> Schedule </a>
@@ -199,7 +357,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="section-title text-center">
-						<h1>Feature Events</h1>
+						<h1>Featured Events</h1>
 						<p>
 							Here are some event ongoing through the semester!
 						</p>
@@ -213,7 +371,7 @@
 						<h4>CS 1410: Intro to CS Workshops</h4>
 						<div class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".1s">
 							<p>
-								<center>Held on S - 738</center><br>
+								Held on S - 738<br>
 								Tuesday ( 11:00 - 12:00 PM)<br>
 								Wednesday (4:00 - 5:00PM) <br>
 								Friday (11:00 - 12:00 PM)
@@ -227,7 +385,7 @@
 						<h4>CS 2410: Data Structures Workshops</h4>
 						<div class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
 							<p>
-							<center>Held on S - 738</center><br>
+							Held on S - 738<br>
 							Tuesday ( 11:00 - 12:00 PM)<br>
 							Wednesday (4:00 - 5:00PM) <br>
 							Friday (11:00 - 12:00 PM)
@@ -241,7 +399,7 @@
 						<h4>MATH 2401: Calc I Workshops </h4>
 						<div class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
 							<p>
-							<center>Held on S - 738</center><br>
+							Held on S - 738<br>
 							Tuesday ( 11:00 - 12:00 PM)<br>
 							Wednesday (4:00 - 5:00PM) <br>
 							Friday (11:00 - 12:00 PM)
@@ -255,7 +413,7 @@
 						<h4>MAA Meetings</h4>
 						<div class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".1s">
 							<p>
-							<center>Held on S - 738</center><br>
+							Held on S - 738<br>
 							Tuesday ( 11:00 - 12:00 PM)<br>
 							Wednesday (4:00 - 5:00PM) <br>
 							Friday (11:00 - 12:00 PM)
@@ -269,7 +427,7 @@
 						<h4>ACM Meetings</h4>
 						<div class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
 							<p>
-							<center>Held on S - 738</center><br>
+							Held on S - 738<br>
 							Tuesday ( 11:00 - 12:00 PM)<br>
 							Wednesday (4:00 - 5:00PM) <br>
 							Friday (11:00 - 12:00 PM)
@@ -283,7 +441,7 @@
 						<h4>PLTL Training</h4>
 						<div class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
 							<p>
-							<center>Held on S - 738</center><br>
+							Held on S - 738<br>
 							Tuesday ( 11:00 - 12:00 PM)<br>
 							Wednesday (4:00 - 5:00PM) <br>
 							Friday (11:00 - 12:00 PM)
@@ -303,9 +461,9 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="section-title text-center">
-						<h1>Peer Leader</h1>
+						<h1>Peer Leaders</h1>
 						<p>
-							Meet our team of excellent peer leader!
+							Meet our team of excellent peer leaders!
 						</p>
 					</div>
 				</div>
@@ -418,3 +576,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </body>
 
 </html>
+
